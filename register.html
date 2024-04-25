@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
-   <link rel="stylesheet" href="user.css">
+   <!-- <link rel="stylesheet" href="user.css"> -->
    <script src="register.js" defer></script>
 </head>
 
@@ -20,7 +20,7 @@
             </td>
             <td class="content">
                <span>영문자, 숫자, _만 입력 가능, 최소 3자 이상</span> <br>
-               <input type="text" name="id" id="id" minlength="5" maxlength="12" onchange="valcheck(this.id)" required>
+               <input type="text" name="id" id="id" minlength="5" maxlength="12" onkeyup="valcheck(this.id)" required>
                <span id="idinfo"></span>
             </td>
          </tr>
@@ -30,7 +30,7 @@
             </td>
             <td class="content">
                <span>영문자, 숫자, 특수문자를 포함하여 6-12자</span> <br>
-               <input type="text" name="pw" id="pw" minlength="6" maxlength="12" onchange="valcheck(this.id)" required>
+               <input type="text" name="pw" id="pw" minlength="6" maxlength="12" onkeyup="valcheck(this.id)" required>
                <span id="pwinfo"></span>
             </td>
          </tr>
@@ -39,7 +39,7 @@
                <label for="pwcheck">비밀번호 확인</label>
             </td>
             <td class="content">
-               <input type="text" name="pwcheck" id="pwcheck" minlength="6" maxlength="12" onchange="valcheck(this.id)"
+               <input type="text" name="pwcheck" id="pwcheck" minlength="6" maxlength="12" onkeyup="valcheck(this.id)"
                   required>
                <span id="pwcheckinfo"></span>
             </td>
@@ -52,7 +52,7 @@
                <label for="name">이름</label>
             </td>
             <td class="content">
-               <input type="text" name="name" id="name" minlength="3" maxlength="12" onchange="valcheck(this.id)"
+               <input type="text" name="name" id="name" minlength="3" maxlength="12" onkeyup="valcheck(this.id)"
                   required>
                <span id="nameinfo"></span>
             </td>
@@ -64,8 +64,8 @@
             <td class="content">
                <span>공백없이 한글,영문,숫자만 입력 가능 (한글2자, 영문4자 이상) <br>
                   닉네임을 바꾸시면 앞으로 1일 이내에는 변경할 수 없습니다.</span> <br>
-               <input type="text" name="nickname" id="nickname" minlength="2" maxlength="12"
-                  onchange="valcheck(this.id)" required>
+               <input type="text" name="nickname" id="nickname" minlength="2" maxlength="12" onkeyup="valcheck(this.id)"
+                  required>
                <span id="nicknameinfo"></span>
             </td>
          </tr>
@@ -74,7 +74,7 @@
                <label for="email">E-mail</label>
             </td>
             <td class="content">
-               <input type="email" name="email" id="email" onchange="valcheck(this.id)" required>
+               <input type="email" name="email" id="email" onkeyup="valcheck(this.id)" required>
                <span id="emailinfo"></span>
             </td>
          </tr>
@@ -102,8 +102,8 @@
                <label for="homeNumber">전화번호</label>
             </td>
             <td class="content">
-               <input type="text" name="homeNumber" id="homeNumber" required>
-               <span id="homenumberinfo"></span>
+               <input type="text" name="homeNumber" id="homeNumber" onkeyup="valcheck(this.id)" required>
+               <span id="homeNumberinfo"></span>
             </td>
          </tr>
          <tr>
@@ -111,8 +111,8 @@
                <label for="phoneNumber">휴대폰번호</label>
             </td>
             <td class="content">
-               <input type="text" name="phoneNumber" id="phoneNumber" required>
-               <span id="phonenumberinfo"></span>
+               <input type="text" name="phoneNumber" id="phoneNumber" onkeyup="valcheck(this.id)" required>
+               <span id="phoneNumberinfo"></span>
             </td>
          </tr>
          <tr>
