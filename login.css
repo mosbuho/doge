@@ -1,0 +1,71 @@
+body {
+   display: flex;
+   justify-content: center;
+}
+
+fieldset {
+   border: none;
+   text-align: center;
+}
+
+legend {
+   text-align: center;
+   font-size: 26px;
+   font-weight: bold;
+}
+
+div#first {
+   margin-top: 10px;
+}
+
+div#second {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-top: 10px;
+   height: 60px;
+}
+
+div#second div#second-first {
+   display: flex;
+   flex-direction: column;
+}
+
+input#notuser {
+   margin-left: 10px;
+}
+
+button#loginbutton {
+   height: 100%;
+   background-color: red;
+   border: none;
+   color: white;
+   border-radius: 10%;
+   margin-left: 5px;
+   font-weight: bold;
+}
+
+div#third {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: 10px;
+}
+
+span#otp {
+   margin-left: 30px;
+}
+
+div#last {
+   margin-top: 10px;
+}
+
+input#id,
+input#pw {
+   height: 45%;
+   margin-top: 5px;
+}
+
+input#id {
+   margin-top: 1.5px;
+}

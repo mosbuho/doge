@@ -48,7 +48,7 @@ function valcheck(id) {
          case "nickname":
             check = /^[a-zA-Z0-9ㄱ-힣]{2,10}$/;
             if (!check.test(target.value)) {
-               targetinfo.innerHTML = "공백x 한글,영문,숫자 2~4자";
+               targetinfo.innerHTML = "공백x 한글,영문,숫자 4자 이상";
             } else {
                targetinfo.innerHTML = "";
             }

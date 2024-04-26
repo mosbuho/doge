@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+   <fieldset>
+      <form action="">
+         <legend>로그인</legend>
+         <div id="first">
+            <input type="radio" name="user" id="user">
+            <label for="user">회원</label>
+            <input type="radio" name="user" id="notuser">
+            <label for="notuser">비회원(주문조회)</label>
+         </div>
+         <div id="second">
+            <div id="second-first">
+               <input type="text" id="id" placeholder="아이디" size="25">
+               <input type="text" id="pw" placeholder="비밀번호" margin-top:5px;" size="25">
+            </div>
+            <div>
+               <button type="submit" id="loginbutton">로그인</button>
+            </div>
+         </div>
+         <div id="third">
+            <span>
+               <input type="checkbox" name="rememberid">
+               <label for="rememberid">아이디저장</label>
+            </span>
+            <span id="otp">
+               <a href="">OTP 로그인</a>
+               <button>?</button>
+            </span>
+         </div>
+         <div id="last">
+            <button>회원가입</button>
+            <button>아이디 찾기</button>
+            <button>비밀번호 찾기</button>
+         </div>
+      </form>
+   </fieldset>
+</body>
+
+</html>
