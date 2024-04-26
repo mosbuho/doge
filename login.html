@@ -6,11 +6,12 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <link rel="stylesheet" href="login.css">
+   <script src="register.js"></script>
 </head>
 
 <body>
    <fieldset>
-      <form action="">
+      <form action="" method="post">
          <legend>로그인</legend>
          <div id="first">
             <input type="radio" name="user" id="user">
@@ -24,7 +25,7 @@
                <input type="text" id="pw" placeholder="비밀번호" margin-top:5px;" size="25">
             </div>
             <div>
-               <button type="submit" id="loginbutton">로그인</button>
+               <button type="button" onclick="loginvalcheck()" id="loginbutton">로그인</button>
             </div>
          </div>
          <div id="third">
@@ -34,13 +35,13 @@
             </span>
             <span id="otp">
                <a href="">OTP 로그인</a>
-               <button>?</button>
+               <button type="button">?</button>
             </span>
          </div>
          <div id="last">
-            <button>회원가입</button>
-            <button>아이디 찾기</button>
-            <button>비밀번호 찾기</button>
+            <button type="button">회원가입</button>
+            <button type="button">아이디 찾기</button>
+            <button type="button">비밀번호 찾기</button>
          </div>
       </form>
    </fieldset>
