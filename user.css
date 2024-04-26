@@ -1,0 +1,131 @@
+body {
+   width: 600px;
+   margin: 0 auto;
+   padding: 0;
+}
+
+h1 {
+   text-align: center;
+}
+
+h5 {
+   margin-top: 10px;
+   margin-bottom: 5px;
+}
+
+form {
+   width: 100%;
+   border: 1px solid black;
+   padding: 10px;
+}
+
+table tr {
+   width: 85%;
+}
+
+table {
+   border-collapse: collapse;
+}
+
+table tr td.title,
+table tr td.content {
+   border: 1px solid rgb(204, 204, 204);
+   border-collapse: collapse;
+}
+
+table tr td.title {
+   width: 150px;
+   text-align: center;
+   font-weight: bold;
+   border-left: none;
+   background-color: rgb(223, 223, 223);
+}
+
+table tr td.content {
+   padding: 8px;
+   width: 78%;
+   border-right: none;
+}
+
+table tr td.content span {
+   font-size: 10px;
+}
+
+table tr td.content input {
+   margin-top: 5px;
+}
+
+table tr td input[required] {
+   border: none;
+   height: 20px;
+   background-image: url(./wrest.gif);
+   background-repeat: no-repeat;
+   background-position: top right;
+   background-color: rgb(241, 241, 241);
+}
+
+table tr td input {
+   border: none;
+   height: 20px;
+   background-color: rgb(241, 241, 241);
+}
+
+td#root {
+   display: flex;
+   border: none;
+   font-size: 10px;
+   width: 100%;
+   align-items: center;
+}
+
+button#addressButton {
+   background-color: black;
+   color: white;
+   height: 15px;
+   font-size: 9px;
+}
+
+label.addresslabel {
+   font-size: 10px;
+}
+
+label.settinglabel {
+   font-size: 12px;
+   align-self: center;
+}
+
+span#kakaospan {
+   color: red;
+}
+
+span.settingspan {
+   display: flex;
+   align-items: center;
+}
+
+input#autoread {
+   height: 40px;
+   text-align: center;
+   font-size: 16px;
+   width: 100px;
+   border: 1px solid black;
+   background-color: rgb(197, 197, 197);
+}
+
+div#button {
+   display: flex;
+   justify-content: center;
+   padding-top: 10px;
+}
+
+button#done {
+   margin-right: 10px;
+   background: pink;
+   color: white;
+   border: none;
+}
+
+button#done,
+button#cancel {
+   height: 30px;
+}

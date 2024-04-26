@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
-   <!-- <link rel="stylesheet" href="user.css"> -->
+   <link rel="stylesheet" href="user.css">
    <script src="register.js" defer></script>
 </head>
 
@@ -20,7 +20,7 @@
             </td>
             <td class="content">
                <span>영문자, 숫자, _만 입력 가능, 최소 3자 이상</span> <br>
-               <input type="text" name="id" id="id" minlength="5" maxlength="12" onkeyup="valcheck(this.id)" required>
+               <input type="text" name="id" id="id" minlength="3" maxlength="12" onkeyup="valcheck(this.id)" required>
                <span id="idinfo"></span>
             </td>
          </tr>
@@ -30,7 +30,8 @@
             </td>
             <td class="content">
                <span>영문자, 숫자, 특수문자를 포함하여 6-12자</span> <br>
-               <input type="text" name="pw" id="pw" minlength="6" maxlength="12" onkeyup="valcheck(this.id)" required>
+               <input type="password" name="pw" id="pw" minlength="6" maxlength="12" onkeyup="valcheck(this.id)"
+                  required>
                <span id="pwinfo"></span>
             </td>
          </tr>
@@ -39,8 +40,8 @@
                <label for="pwcheck">비밀번호 확인</label>
             </td>
             <td class="content">
-               <input type="text" name="pwcheck" id="pwcheck" minlength="6" maxlength="12" onkeyup="valcheck(this.id)"
-                  required>
+               <input type="password" name="pwcheck" id="pwcheck" minlength="6" maxlength="12"
+                  onkeyup="valcheck(this.id)" required>
                <span id="pwcheckinfo"></span>
             </td>
          </tr>
@@ -129,7 +130,7 @@
             </td>
             <td class="content">
                <input type="text" name="address" id="address" required>
-               <button id="addressButton">주소 검색</button> <br>
+               <button type="button" id="addressButton">주소 검색</button> <br>
                <span id="addressinfo"></span>
                <input type="text" name="address1" id="address1" size="40" required>
                <label for="address1" class="addresslabel">기본주소</label> <br>
@@ -151,7 +152,7 @@
                   <input type="checkbox" name="kakaocheck" id="kakaocheck" checked>
                   <label for="kakaocheck" class="settinglabel">카카오톡 메세지를 받겠습니다.</label>
                </span>
-               <span id="kakaospan">&gt; 수신체크를 하시면 세일 소식을 가장 먼저 받아보실 수 있습니다.</span>
+               <span id="kakaospan">수신체크를 하시면 세일 소식을 가장 먼저 받아보실 수 있습니다.</span>
             </td>
          </tr>
          <tr>
@@ -193,17 +194,18 @@
                <label for="id">자동등록방지</label>
             </td>
             <td class="content" id="autocheck">
-               <input type="text" value="XHYwW2nq" id="autoread" readonly>
-               <button>코드생성</button>
-               <input type="text" name="autocheck" id="autocheck" required>
-               <button>비교</button> <br>
-               <span>자동등록방지 문자와 숫자를 순서대로 입력해 주세요.</span>
+               <input type="text" value="" id="autoread" readonly>
+               <button type="button" onclick="changeval()">코드생성</button>
+               <input type="text" name="auto" id="auto" required>
+               <button type="button" onclick="valcheck('auto')">비교</button> <br>
+               <span>자동등록방지 문자와 숫자를 순서대로 입력해 주세요.</span> <br>
+               <span id="autoinfo"></span>
             </td>
          </tr>
       </table>
       <div id="button">
-         <button type="submit" id="done">회원가입</button>
-         <button id="cancel">취소</button>
+         <button type="submit" id="done" disabled>회원가입</button>
+         <button type="button" onclick="history.back();" id="cancel">취소</button>
       </div>
    </form>
 </body>
