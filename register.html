@@ -129,11 +129,12 @@
                <label for="address">주소</label>
             </td>
             <td class="content">
-               <input type="text" name="address" id="address" required>
-               <button type="button" id="addressButton">주소 검색</button> <br>
-               <span id="addressinfo"></span>
-               <input type="text" name="address1" id="address1" size="40" required>
-               <label for="address1" class="addresslabel">기본주소</label> <br>
+               <input type="text" name="address" id="address" onkeyup="valcheck(this.id)" required>
+               <button type="button" id="addressButton">주소 검색</button>
+               <span id="addressinfo"></span> <br>
+               <input type="text" name="address1" id="address1" size="40" onkeyup="valcheck(this.id)" required>
+               <label for="address1" class="addresslabel">기본주소</label>
+               <span id="address1info"></span> <br>
                <input type="text" name="address2" id="address2" size="40">
                <label for="address2" class="addresslabel">상세주소</label> <br>
                <input type="text" name="address3" id="address3" size="40">
