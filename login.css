@@ -1,11 +1,8 @@
-body {
-   display: flex;
-   justify-content: center;
-}
-
 fieldset {
    border: none;
    text-align: center;
+   width: 270px;
+   margin: 0 auto;
 }
 
 legend {

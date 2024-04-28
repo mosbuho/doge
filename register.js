@@ -1,7 +1,7 @@
 changeval();
 
 function changeval() {
-   let chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+   const chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
    let randomString = "";
    for (let i = 0; i < 8; i++) {
       randomString += chars[Math.floor(Math.random() * chars.length)];
@@ -9,19 +9,11 @@ function changeval() {
    document.getElementById("autoread").value = randomString;
 }
 
-function loginvalcheck() {
-   if (document.getElementById("id").value == "admin" && document.getElementById("pw").value == "admin") {
-      alert("로그인 성공");
-   } else {
-      alert("로그인 실패");
-   }
-}
-
 function valcheck(id) {
    let check = null;
-   let space = /\s/g;
-   let target = document.getElementById(id);
-   let targetinfo = document.getElementById(id + "info");
+   const space = /\s/g;
+   const target = document.getElementById(id);
+   const targetinfo = document.getElementById(id + "info");
    if (target.value == "") {
       targetinfo.innerHTML = "필수 입력 항목";
    } else if (space.test(target.value)) {
