@@ -62,7 +62,7 @@ function loadHTML(id) {
         .then(content => {
             target.innerHTML = content;
             const script = document.createElement('script');
-            script.src = 'register.js';
+            script.src = `${id}.js`;
             script.defer = true;
             document.head.appendChild(script);
         })
