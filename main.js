@@ -127,8 +127,12 @@ function hideInMenu(id) {
 }
 
 function loadHTML(id) {
+    let otherScript = document.querySelectorAll('script:not([src="main.js"])');
+    for (let i = 0; i < otherScript.length; i++) {
+        otherScript[i].parentNode.removeChild(otherScript[i]);
+    }
     const html = `${id}.html`;
-    const target = document.getElementById("aricle");
+    const target = document.getElementById("article");
     target.innerHTML = '';
     fetch(html)
         .then(response => response.text())

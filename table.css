@@ -1,0 +1,13 @@
+table {
+    margin: 0 auto;
+    width: 900px;
+    text-align: center;
+}
+
+table,
+table thead th,
+table tr,
+table td {
+    border: 1px solid var(--border-color);
+    border-collapse: collapse;
+}

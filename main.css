@@ -178,11 +178,11 @@ main {
 }
 
 article {
+    width: 1200px;
     padding: 20px 0;
 }
 
 article.slider-container {
-    width: 1200px;
     position: relative;
     margin: 0 auto;
     overflow: hidden;
